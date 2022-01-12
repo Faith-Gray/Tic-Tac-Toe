@@ -34,6 +34,12 @@ header {
     border-width: 1px;
     border-style: solid;
     border-color: #e0ebeb;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+    
 }
 
 .playerOne {
