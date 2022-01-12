@@ -1,0 +1,53 @@
+* {
+    background-color: #e0ebeb;
+    font-family: 'Press Start 2P', Caligraphy;
+}
+
+header { 
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    color: #5dacbd;
+}
+
+.boardGame {
+    width: 500px;
+    height: 500px;
+    background-color: #e0ebeb;
+    border-radius: 8px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+    width: 166px;
+    height: 166px;
+    background-color: white;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0ebeb;
+}
+
+.playerOne {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #5dacbd;
+    font-size: 30px;
+}
+
+.playerTwo {
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    color: #5dacbd;
+    font-size: 30px;
+}
