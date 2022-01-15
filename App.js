@@ -1,20 +1,43 @@
 const squares = document.querySelectorAll('[data-square]');
-
+const P1 = 'X'
+const P2 = 'O'
 const gameBoard = (() => {
     boardArray = new Array(9);
 })();
 
+console.log(length.boardArray);
 squares.forEach(square => {
     square.addEventListener('click', squareClicked, {once: true})
 });
 
-function squareClicked() {
+function squareClicked(e) {
     console.log('clicked');
+    //placeMark();
+    if (turn == P1) {
+        e.target.textContent = 'X';
+    } else {
+        e.target.textContent = 'O';
+    }
+    changeTurn();
+   // e.target.textContent = "X";
     //mark x or o
     //check for win or tie
     //change turn
 
 };
+
+let turn = P1;
+
+function changeTurn() {
+    if (turn == P1) {
+        turn = P2
+    }
+    else {turn = P1}
+}
+
+function checkWin() {
+    boardArray
+}
 
 //const playRound = 
 //p1 pick
