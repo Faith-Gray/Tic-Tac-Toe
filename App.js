@@ -1,14 +1,26 @@
 const squares = document.querySelectorAll('[data-square]');
 const P1 = 'X'
 const P2 = 'O'
-const gameBoard = (() => {
-    boardArray = new Array(9);
-})();
+// const gameBoard = (() => {
+//     boardArray = new Array(9);
+// });
+boardArray = new Array(9);
 
-console.log(length.boardArray);
+console.log(boardArray.length);
 squares.forEach(square => {
     square.addEventListener('click', squareClicked, {once: true})
 });
+
+const winningConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [6, 4, 2],
+    [0, 4, 8]
+]
 
 function squareClicked(e) {
     console.log('clicked');
